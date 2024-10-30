@@ -97,8 +97,11 @@ public class RespostaListaExercicio {
 	public static void imprimirArrayInverso(int[] array)
 	{
 		for (int i = array.length - 1; i >= 0; i--) {
-	        System.out.print(array[i] + " ");
+	        System.out.print(array[i]);
+	        if (i > 0) {
+	            System.out.print(",");
 	        }
+	    }
 	}
 	
 	/**
